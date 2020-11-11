@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -27,89 +29,31 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
-
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
-          })}
+          <VerticalTimeline>
+            {projects.map((project, i) => {
+              const { title, info, info2, url, repo, img, id, date } = project;
+              const timeLineStyle =
+                i % 2 === 0
+                  ? { background: '#ed91008f', color: '#fff' }
+                  : { background: '#0062cc36', color: '#fff' };
+              const iconButtonStyle =
+                i % 2 === 0 ? { background: 'rgb(138 88 8)' } : { background: 'rgb(9 33 58)' };
+              return (
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={timeLineStyle}
+                  contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                  date={date}
+                  iconStyle={iconButtonStyle}
+                >
+                  <h3 className="vertical-timeline-element-title">{title}</h3>
+                  <p className="vertical-timeline-element-subtitle">{info}</p>
+                  <ProjectImg filename={img} alt={title} />
+                  <p className="vertical-timeline-element-paragraph">{info2}</p>
+                </VerticalTimelineElement>
+              );
+            })}
+          </VerticalTimeline>
         </div>
       </Container>
     </section>
