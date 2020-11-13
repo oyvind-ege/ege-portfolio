@@ -38,6 +38,7 @@ export const projectsData = [
     date: 2020,
     url: '',
     repo: 'https://github.com/jopemoma/Graduation-Project', // if no repo, the button will not show up
+    tech: ['Javascript', 'React Native'],
   },
   {
     id: nanoid(),
@@ -49,16 +50,18 @@ export const projectsData = [
     date: 2020,
     url: '',
     repo: 'https://github.com/oyvind-ege/wnda.amortization', // if no repo, the button will not show up
+    tech: ['Javascript', 'Svelte'],
   },
   {
     id: nanoid(),
-    img: 'tictactoe.jpg',
+    img: 'tictacwelcome.PNG',
     title: 'Tic Tac Toe',
     info: 'The classic board game',
     info2: 'My Python implementation of Tic Tac Toe, the classic board game for two players.',
     date: 2019,
     url: '',
     repo: 'https://github.com/oyvind-ege/TicTacToe', // if no repo, the button will not show up
+    tech: ['Python'],
   },
   {
     id: nanoid(),
@@ -66,10 +69,34 @@ export const projectsData = [
     title: 'Egg',
     info: 'A foolprof egg-timer for all globalists out there.',
     info2:
-      "Ever tried to cook an egg in the Andes or by the Dead Sea? I have, and ended up eating a half-boiled egg. This web-app will calculate the correct cooking time for an egg given the user's geolocation. 100% scientific.",
+      "Ever tried to cook an egg in the Andes or by the Dead Sea? I have - and ended up eating a half-boiled egg. This web-app will calculate the correct cooking time for an egg given the user's geolocation. 100% scientific.",
     date: 2020,
     url: '',
     repo: 'https://github.com/oyvind-ege/TicTacToe', // if no repo, the button will not show up
+    tech: ['Svelte', 'Javascript'],
+  },
+];
+
+export const techData = [
+  {
+    name: 'Svelte',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/svelte-icon.svg',
+  },
+  {
+    name: 'React',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/react.svg',
+  },
+  {
+    name: 'Javascript',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/javascript.svg',
+  },
+  {
+    name: 'Python',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/python.svg',
+  },
+  {
+    name: 'React Native',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/react.svg',
   },
 ];
 

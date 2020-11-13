@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+
+import Project from './Project';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -39,18 +39,12 @@ const Projects = () => {
               const iconButtonStyle =
                 i % 2 === 0 ? { background: 'rgb(138 88 8)' } : { background: 'rgb(9 33 58)' };
               return (
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  contentStyle={timeLineStyle}
-                  contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                  date={date}
-                  iconStyle={iconButtonStyle}
-                >
-                  <h3 className="vertical-timeline-element-title">{title}</h3>
-                  <p className="vertical-timeline-element-subtitle">{info}</p>
-                  <ProjectImg filename={img} alt={title} />
-                  <p className="vertical-timeline-element-paragraph">{info2}</p>
-                </VerticalTimelineElement>
+                <Project
+                  key={i}
+                  timeLineStyle={timeLineStyle}
+                  iconButtonStyle={iconButtonStyle}
+                  data={project}
+                />
               );
             })}
           </VerticalTimeline>

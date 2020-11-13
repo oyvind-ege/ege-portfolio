@@ -11,30 +11,25 @@
 
   .vertical-timeline-element-content {
     position: relative;
-    margin-left: 60px;
     background: #fff;
     border-radius: .45em;
     padding: 1em;
     box-shadow: 2px 2px 1px rgb(61, 57, 57);
   }
 
-  .vertical-timeline-element-1 {
-    background: $timeline-bright;
-    color: $white-color;
-  }
-
-  .vertical-timeline-element-2 {
-    background: $timeline-blue;
-    color: $white-color;
-  }
-
   .vertical-timeline-element-paragraph {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .vertical-timeline-element-subtitle {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .timeline__techstack {
+    display: inline-block;
+    float: right;
+    width: 50%;
   }
 
   .project-wrapper {
