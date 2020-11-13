@@ -15,13 +15,13 @@ const Project = (props) => {
       date={date}
       iconStyle={iconButtonStyle}
     >
-      <div>
+      <div className="vertical-timeline__title-wrapper">
         <h3 className="vertical-timeline-element-title">{title}</h3>
-        <TechStackBar content={tech} />
       </div>
       <p className="vertical-timeline-element-subtitle">{info}</p>
       <ProjectImg filename={img} alt={title} />
       <p className="vertical-timeline-element-paragraph">{info2}</p>
+      <TechStackBar content={tech} />
     </VerticalTimelineElement>
   );
 };
