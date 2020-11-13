@@ -37,7 +37,9 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">© {new Date().getFullYear()}</p>
+        <p className="footer__text">
+          © {new Date().getFullYear()} -- adapted from a theme by Jacobo Martínez
+        </p>
 
         {isEnabled && <GithubButtons />}
       </Container>
