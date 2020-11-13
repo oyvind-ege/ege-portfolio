@@ -6,13 +6,12 @@ import TechStackBar from '../TechStackBar/TechStackBar';
 
 const Project = (props) => {
   const { data, timeLineStyle, iconButtonStyle } = props;
-  const { date, title, info, img, info2, tech } = data;
+  const { title, info, img, info2, tech } = data;
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={timeLineStyle}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-      date={date}
       iconStyle={iconButtonStyle}
     >
       <div className="vertical-timeline__title-wrapper">

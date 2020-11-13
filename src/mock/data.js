@@ -34,11 +34,11 @@ export const projectsData = [
     title: 'Bidra Sammen',
     info: 'An app for volunteers and those who need them',
     info2:
-      'Our final group project at SALT. Bidra Sammen enables volunteers to sign up for events near them, and for organizations to create events and manage attendance. Written in React Native, with separate frontends for users and organisations.',
+      'Our final group project at SALT. Bidra Sammen enables volunteers to sign up for events near them, and for organizations to create events and manage attendance.',
     date: 2020,
     url: '',
     repo: 'https://github.com/jopemoma/Graduation-Project', // if no repo, the button will not show up
-    tech: ['Javascript', 'React Native'],
+    tech: ['Javascript', 'React Native', 'Node', 'MongoDB'],
   },
   {
     id: nanoid(),
@@ -73,7 +73,7 @@ export const projectsData = [
     date: 2020,
     url: '',
     repo: 'https://github.com/oyvind-ege/TicTacToe', // if no repo, the button will not show up
-    tech: ['Svelte', 'Javascript'],
+    tech: ['Javascript', 'Svelte'],
   },
 ];
 
@@ -97,6 +97,14 @@ export const techData = [
   {
     name: 'React Native',
     svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/react.svg',
+  },
+  {
+    name: 'Node',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/nodejs-icon.svg',
+  },
+  {
+    name: 'MongoDB',
+    svg: 'https://github.com/tomchen/stack-icons/raw/master/logos/mongodb-icon.svg',
   },
 ];
 
