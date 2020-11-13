@@ -37,7 +37,7 @@ export const projectsData = [
       'Our final group project at SALT. Bidra Sammen enables volunteers to sign up for events near them, and for organizations to create events and manage attendance.',
     date: 2020,
     url: '',
-    repo: 'https://github.com/jopemoma/Graduation-Project', // if no repo, the button will not show up
+    repo: 'https://github.com/jopemoma/Graduation-Project',
     tech: ['Javascript', 'React Native', 'Node', 'MongoDB'],
   },
   {
@@ -48,8 +48,8 @@ export const projectsData = [
     info2:
       'The result of an 8-hour challenge to build an amortization scheduler. This web-app will generate and display an amortization schedule based on a predefined set of loan criteria. Consists of a Svelte frontend and mocked data.',
     date: 2020,
-    url: '',
-    repo: 'https://github.com/oyvind-ege/wnda.amortization', // if no repo, the button will not show up
+    url: 'https://www.vg.no',
+    repo: 'https://github.com/oyvind-ege/wnda.amortization',
     tech: ['Javascript', 'Svelte'],
   },
   {
@@ -60,7 +60,7 @@ export const projectsData = [
     info2: 'My Python implementation of Tic Tac Toe, the classic board game for two players.',
     date: 2019,
     url: '',
-    repo: 'https://github.com/oyvind-ege/TicTacToe', // if no repo, the button will not show up
+    repo: 'https://github.com/oyvind-ege/TicTacToe',
     tech: ['Python'],
   },
   {
@@ -72,7 +72,7 @@ export const projectsData = [
       "Ever tried to cook an egg in the Andes or by the Dead Sea? I have - and ended up eating a half-boiled egg. This web-app will calculate the correct cooking time for an egg given the user's geolocation. 100% scientific.",
     date: 2020,
     url: '',
-    repo: 'https://github.com/oyvind-ege/TicTacToe', // if no repo, the button will not show up
+    repo: 'https://github.com/oyvind-ege/TicTacToe',
     tech: ['Javascript', 'Svelte'],
   },
 ];
@@ -112,7 +112,7 @@ export const techData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'contact@oyvind-ege.dev',
 };
 
 // FOOTER DATA

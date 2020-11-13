@@ -6,13 +6,14 @@ import TechStackBar from '../TechStackBar/TechStackBar';
 
 const Project = (props) => {
   const { data, timeLineStyle, iconButtonStyle } = props;
-  const { title, info, img, info2, tech } = data;
+  const { title, info, img, info2, tech, url } = data;
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={timeLineStyle}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       iconStyle={iconButtonStyle}
+      onTimelineElementClick={() => window.open(url)}
     >
       <div className="vertical-timeline__title-wrapper">
         <h3 className="vertical-timeline-element-title">{title}</h3>

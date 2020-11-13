@@ -9,11 +9,16 @@
     padding-top: 5rem;
   }
 
+  .vertical-timeline-element--work :hover{
+    transform: scale(1.05);
+  }
+
   .vertical-timeline-element-content {
     position: relative;
     background: #fff;
     border-radius: .45em;
     padding: 1em;
+    transition: transform .2s;
     box-shadow: 2px 2px 1px rgb(61, 57, 57);
   }
 
