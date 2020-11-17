@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import ProjectImg from '../Image/ProjectImg';
 import TechStackBar from '../TechStackBar/TechStackBar';
+import PropTypeShapeList from '../PropTypes/PropTypes';
 
 const Project = (props) => {
   const { data, timeLineStyle, iconButtonStyle } = props;
@@ -27,16 +28,7 @@ const Project = (props) => {
 };
 
 Project.propTypes = {
-  data: PropTypes.shape({
-    img: PropTypes.string,
-    title: PropTypes.string,
-    info: PropTypes.string,
-    info2: PropTypes.string,
-    date: PropTypes.number,
-    url: PropTypes.string,
-    repo: PropTypes.string,
-    tech: PropTypes.arrayOf(PropTypes.string),
-  }),
+  data: PropTypes.shape(PropTypeShapeList.project),
   timeLineStyle: PropTypes.shape({
     background: PropTypes.string,
     color: PropTypes.string,
