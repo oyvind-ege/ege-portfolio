@@ -38,6 +38,24 @@
       justify-content: center;
       flex-direction: column;
 
+      @media (orientation: landscape) {
+
+        margin-bottom: 15%;
+
+        @include respond(big-desktop) {
+          margin-bottom: 0;
+        }
+
+        @include respond(tab-land) {
+          margin-bottom: 0;
+        }
+
+        @include respond(phone) {
+          margin-bottom: 0;
+        }
+
+      }
+
       @include respond(phone) {
         align-items: center;
       }
