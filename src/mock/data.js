@@ -20,19 +20,17 @@ export const aboutData = {
   img: 'front-square-500.png',
   paragraphOne:
     'Formerly a genocide investigator with the UN, I am now a full-stack developer using JavaScript, TypeScript, React and Node.js/Express.',
-  paragraphTwo:
-    'I add value by smiling and laughing and solving tough problems. I am otherwise a pretty chill guy.',
-  paragraphThree: 'If you think you can run fast and walk far, I challenge you to beat me.',
+  paragraphTwo: 'I smile and solve problems. Otherwise a pretty chill guy.',
+  paragraphThree: 'Have a look below for a timeline of my recent projects.',
   resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: nanoid(),
     img: 'bidra-sammen2.png',
     title: 'Bidra Sammen',
-    info: 'An app for volunteers and those who need them',
+    info: 'An app for volunteers and organizations that need them',
     info2:
       'Our final group project at SALT. Bidra Sammen enables volunteers to sign up for events near them, and for organizations to create events and manage attendance.',
     date: 2020,
@@ -69,7 +67,7 @@ export const projectsData = [
     title: 'Egg',
     info: 'A foolprof egg-timer for all globalists out there.',
     info2:
-      "Ever tried to cook an egg in the Andes or by the Dead Sea? I have - and ended up eating a half-boiled egg. This web-app will calculate the correct cooking time for an egg given the user's geolocation. 100% scientific.",
+      "From another 1-day challenge. This web-app will calculate the correct cooking time for an egg given the user's current elevation. 100% scientific.",
     date: 2020,
     url: '',
     repo: 'https://github.com/oyvind-ege/TicTacToe',

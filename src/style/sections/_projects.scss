@@ -9,45 +9,35 @@
     padding-top: 5rem;
   }
 
-  .vertical-timeline-element--work :hover{
-    transform: scale(1.05);
-  }
-
   .vertical-timeline-element-content {
     position: relative;
     background: #fff;
     border-radius: .45em;
     padding: 1em;
-    transition: transform .2s;
     box-shadow: 2px 2px 1px rgb(61, 57, 57);
-  }
-
-  .vertical-timeline__title-wrapper {
-    display: flex;
-    align-items: center;
-    height: 50px;
-  }
-
-  .vertical-timeline-element-title {
-    display: block;
-    font-size: 3rem;
-    flex: 1;
-  }
-
-  .vertical-timeline-element-paragraph {
-    font-size: 1.6rem;
-  }
-
-  .vertical-timeline-element-subtitle {
-    font-style: italic;
-    font-size: 1.2rem;
   }
 
   .timeline__techstack {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 3em;
+    margin: 2em 2em 1em 2em;
+
+    img {
+
+      @include respond(tab-land) {
+        width: 7%;
+      }
+
+      @include respond(tab-port) {
+        width: 8%;
+      }
+
+      @include respond(phone) {
+        width: 12%;
+      }
+
+    }
   }
 
   .project-wrapper {
@@ -57,31 +47,57 @@
       margin-bottom: 0rem;
     }
 
-    .row {
-      margin-bottom: 8rem;
-
-      @include respond(phone) {
-        margin-bottom: 4rem;
-      }
-    }
-
     &__text {
-      text-align: left;
+      font-size: $default-font-size;
+
+      @include respond(big-desktop) {
+        font-size: $big-font-size;
+      }
+
+      @include respond(tab-land) {
+        margin-bottom: 4.8rem;
+        font-size: $default-font-size;
+      }
+
+      @include respond(tab-port) {
+        font-size: $default-font-size;
+      }
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
+        font-size: $small-font-size;
       }
 
       &-title {
         font-weight: bold;
-        margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
+        margin: auto auto 1.3rem auto;
+        font-size: $medium-title-font-size;
+        color: $bright-complimentary;
+
+        @include respond(big-desktop) {
+          font-size: $large-title-font-size;
+        }
+
+        @include respond(tab-land) {
+          font-size: $larger-title-font-size;
+        }
+
+        @include respond(tab-port) {
+          font-size: $medium-title-font-size;
+        }
 
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: $small-title-font-size;
+        }
+      }
+
+      &-subtitle {
+        font-style: italic;
+        margin: 0 0 1.8rem 0;
+        font-size: 1.9rem;
+
+        @include respond(phone) {
+          font-size: 1.4rem;
         }
       }
 
@@ -95,8 +111,15 @@
       margin: 0 auto;
 
       @include respond(tab-land) {
+        width: 60%;
+      }
+
+      @include respond(tab-port) {
+        width: 70%;
+      }
+
+      @include respond(phone) {
         width: 100%;
-        margin: 0;
       }
 
       & .thumbnail {

@@ -6,21 +6,21 @@ import TechStackBar from '../TechStackBar/TechStackBar';
 
 const Project = (props) => {
   const { data, timeLineStyle, iconButtonStyle } = props;
-  const { title, info, img, info2, tech, url } = data;
+  const { title, info, img, info2, tech, repo } = data;
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={timeLineStyle}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       iconStyle={iconButtonStyle}
-      onTimelineElementClick={() => window.open(url)}
+      onTimelineElementClick={() => window.open(repo)}
     >
-      <div className="vertical-timeline__title-wrapper">
-        <h3 className="vertical-timeline-element-title">{title}</h3>
+      <h3 className="project-wrapper__text-title">{title}</h3>
+      <p className="project-wrapper__text-subtitle">{info}</p>
+      <div className="project-wrapper__image">
+        <ProjectImg filename={img} alt={title} />
       </div>
-      <p className="vertical-timeline-element-subtitle">{info}</p>
-      <ProjectImg filename={img} alt={title} />
-      <p className="vertical-timeline-element-paragraph">{info2}</p>
+      <p className="project-wrapper__text">{info2}</p>
       <TechStackBar content={tech} />
     </VerticalTimelineElement>
   );
