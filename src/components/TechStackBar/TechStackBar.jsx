@@ -10,14 +10,14 @@ const TechStackBar = (props) => {
     <div className="timeline__techstack">
       {content.map((tech, i) => {
         const a = techDta.find((el) => el.name === tech) || { name: 'Unknown', svg: '' };
-        return <img width="48px" key={i} src={a.svg} alt={tech} />;
+        return <img width="48px" key={i.toString()} src={a.svg} alt={tech} />;
       })}
     </div>
   );
 };
 
 TechStackBar.propTypes = {
-  content: PropTypes.shape,
+  content: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default TechStackBar;

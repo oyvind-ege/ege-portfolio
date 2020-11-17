@@ -20,10 +20,9 @@ export const aboutData = {
   img: 'front-square-500.png',
   paragraphs: [
     'Hi! I am Øyvind. I am a former genocide investigator and peace process associate, having worked with both the UN in Cambodia and an NGO in Switzerland.',
-    'Though extremely meaningful and intellectually stimulating, my previous career was far removed from the lives of those we purported to serve, and that troubled me. I wanted to maximize my impact, and so I mulled it over, thought deeply about the implications, and one day decided to take the plunge and committ to a career change.',
+    'Though extremely meaningful and intellectually stimulating, my previous career was far removed from the lives of those we served, and so one day I decided to take the plunge and committ to a career change.',
     'Software engineering was my field of choice for one very simple reason: it combines rigurous intellectual work with a clear-headed focus on building tangible and useful products for the end-user.',
-    'I am now a fullstack developer, trained in JavaScript/TypeScript along with React, Express, Node, and MongoDB/PostgreSQL. Though I have an eye for colors and harmonies I prefer to work on the back end of the stack. Here I can delve deeply into domain-specific patterns and algorithms, and solve tough problems in a neat and elegant way.',
-    'In the future I would like to lead teams in solving the great challenges ahead.',
+    'I am now a fullstack developer, trained in JavaScript/TypeScript along with React, Express, Node, and MongoDB/PostgreSQL. Though I have an eye for colors and harmonies, I prefer to work on the back end of the stack. Here I can delve deeply into domain-specific patterns and algorithms, and solve tough problems in a neat and elegant way.',
   ],
   resume: '', // if no resume, the button will not show up
 };
@@ -73,7 +72,7 @@ export const projectsData = [
       "From another 1-day challenge. This web-app will calculate the correct cooking time for an egg given the user's current elevation. 100% scientific.",
     date: 2020,
     url: '',
-    repo: 'https://github.com/oyvind-ege/TicTacToe',
+    repo: 'https://github.com/oyvind-ege/egg-svelte',
     tech: ['Javascript', 'Svelte'],
   },
 ];

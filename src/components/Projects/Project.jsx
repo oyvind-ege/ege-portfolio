@@ -27,9 +27,23 @@ const Project = (props) => {
 };
 
 Project.propTypes = {
-  data: PropTypes.shape,
-  timeLineStyle: PropTypes.shape,
-  iconButtonStyle: PropTypes.shape,
+  data: PropTypes.shape({
+    img: PropTypes.string,
+    title: PropTypes.string,
+    info: PropTypes.string,
+    info2: PropTypes.string,
+    date: PropTypes.number,
+    url: PropTypes.string,
+    repo: PropTypes.string,
+    tech: PropTypes.arrayOf(PropTypes.string),
+  }),
+  timeLineStyle: PropTypes.shape({
+    background: PropTypes.string,
+    color: PropTypes.string,
+  }),
+  iconButtonStyle: PropTypes.shape({
+    background: PropTypes.string,
+  }),
 };
 
 export default Project;
