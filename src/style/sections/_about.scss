@@ -38,20 +38,38 @@
       justify-content: center;
       flex-direction: column;
 
+      @include respond(tab-land) {
+        width: 65%;
+        margin: auto;
+      }
+
+      @include respond(tab-port) {
+        width: 80%;
+        margin: auto;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
       @media (orientation: landscape) {
 
         margin-bottom: 15%;
 
         @include respond(big-desktop) {
-          margin-bottom: 0;
+          margin: auto;
         }
 
         @include respond(tab-land) {
-          margin-bottom: 0;
+          margin: auto;
+        }
+
+        @include respond(tab-port) {
+          margin: auto;
         }
 
         @include respond(phone) {
-          margin-bottom: 0;
+          margin: auto;
         }
       }
 
