@@ -75,7 +75,7 @@
         color: $bright-complimentary;
 
         @include respond(big-desktop) {
-          font-size: $large-title-font-size;
+          font-size: $larger-title-font-size;
         }
 
         @include respond(tab-land) {
