@@ -47,6 +47,12 @@
       margin-bottom: 0rem;
     }
 
+    .vertical-timeline {
+      @include respond(tab-land){
+        width: 70%;
+      }
+    }
+
     &__text {
       font-size: $default-font-size;
 
