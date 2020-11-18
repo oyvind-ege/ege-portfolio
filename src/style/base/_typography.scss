@@ -17,6 +17,7 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
+  color: $bright-complimentary;
 }
 
 a:hover {
@@ -41,7 +42,6 @@ a:hover {
   -webkit-text-fill-color: transparent; */
   color: $bright-complimentary;
 
-  // Responsive text purple style
   @include respond(phone) {
     background-image: none;
     -webkit-text-fill-color: $bright-complimentary;

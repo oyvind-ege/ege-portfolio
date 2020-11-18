@@ -28,7 +28,7 @@ const Project = (props) => {
           className="cta-btn cta-btn--resume"
           href={repo}
         >
-          View Source
+          View code
         </a>
         {url ? (
           <a
