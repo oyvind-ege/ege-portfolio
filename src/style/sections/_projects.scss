@@ -143,5 +143,17 @@
         }
       }
     }
+
+    &__source-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 2em 0 2em 0;
+    }
+
+    hr {
+      width: 40%;
+      border: 1px solid $timeline-hr;
+    }
   }
 }
