@@ -26,15 +26,15 @@ const About = () => {
     <section id="about">
       <Container>
         <Title title="About Me" />
-        <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+        <Row className="about-wrapper" md={1} lg={1} xl={2}>
+          <Col>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 {paragraphs ? (

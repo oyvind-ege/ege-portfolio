@@ -24,11 +24,11 @@
 
       @include respond(tab-port) {
         padding-bottom: 6.4rem;
-        margin-bottom: 4rem;
       }
 
       @include respond(tab-land) {
         height: 100%;
+        padding-bottom: 6.4rem;
       }
     }
 
@@ -53,7 +53,6 @@
         @include respond(phone) {
           margin-bottom: 0;
         }
-
       }
 
       @include respond(phone) {
@@ -61,21 +60,18 @@
       }
 
       &-text {
-        text-align: left;
+        text-align: center;
 
         @include respond(big-desktop) {
           font-size: $big-font-size;
-          text-align: center;
         }
 
         @include respond(tab-port) {
           font-size: $default-font-size;
-          text-align: center;
         }
 
         @include respond(phone) {
           font-size: $default-font-size;
-          text-align: center;
         }
 
         &--important {
