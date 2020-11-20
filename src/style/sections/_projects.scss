@@ -9,13 +9,7 @@
     padding-top: 5rem;
   }
 
-  .vertical-timeline-element-content {
-    position: relative;
-    background: #fff;
-    border-radius: .45em;
-    padding: 1em;
-    box-shadow: 2px 2px 1px rgb(61, 57, 57);
-  }
+  
 
   .timeline__techstack {
     display: flex;
@@ -50,6 +44,17 @@
     .vertical-timeline {
       @include respond(tab-land){
         width: 70%;
+      }
+
+      &-element {
+
+        &-content {
+          position: relative;
+          background: #fff;
+          border-radius: .45em;
+          padding: 1em;
+          box-shadow: 2px 2px 1px rgb(61, 57, 57);
+        }
       }
     }
 

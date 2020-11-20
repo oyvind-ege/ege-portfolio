@@ -38,7 +38,15 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} -- adapted from a theme by Jacobo Martínez
+          © {new Date().getFullYear()} -- adapted from a{' '}
+          <a
+            href="https://github.com/cobidev/gatsby-simplefolio"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="theme"
+          >
+            theme by Jacobo Martínez
+          </a>
         </p>
 
         {isEnabled && <GithubButtons />}

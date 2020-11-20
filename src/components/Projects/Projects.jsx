@@ -15,8 +15,8 @@ const Projects = () => {
         <Title title="Projects" />
         <VerticalTimeline>
           {projects.map((project, i) => {
-            const timeLineStyle = { background: '#0062cc36', color: '#fff' };
-            const iconButtonStyle = { background: 'rgb(9 33 58)' };
+            const timeLineStyle = { background: '#74776B', color: '#fff' };
+            const iconButtonStyle = { background: '#74776B' };
             return (
               <Project
                 key={i.toString()}
