@@ -28,7 +28,7 @@ const Project = (props) => {
           className="cta-btn cta-btn--resume"
           href={repo}
         >
-          View code
+          Code
         </a>
         {url ? (
           <a
@@ -37,7 +37,7 @@ const Project = (props) => {
             className="cta-btn cta-btn--resume"
             href={url}
           >
-            See live
+            Live
           </a>
         ) : (
           ''
