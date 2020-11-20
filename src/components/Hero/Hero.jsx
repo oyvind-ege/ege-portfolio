@@ -25,11 +25,11 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            <span className="text-color-main">{name || 'Your Name'}</span>
+            <span className="text-color-main">{name || ''}</span>
             <br />
             {title}
             <br />
-            <span className="text-color-main">{subtitle || "I'm the Unknown Developer."}</span>
+            <span className="text-color-main">{subtitle || ''}</span>
           </h1>
         </Fade>
       </Container>
