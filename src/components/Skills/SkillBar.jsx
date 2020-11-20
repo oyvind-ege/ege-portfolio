@@ -4,7 +4,7 @@ import PropType from 'prop-types';
 const SkillBar = (props) => {
   const { skill } = props;
   const cssStyle = {
-    'background-color': `${skill.displayColor}`,
+    backgroundColor: `${skill.displayColor}`,
     width: `${skill.level * 10}%`,
     height: '100%',
     border: '1px solid',

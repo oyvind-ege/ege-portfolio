@@ -28,6 +28,7 @@ function App() {
   const [techDta, setTechDta] = useState([]);
   const [techskills, setTechSkills] = useState([]);
   const [softskills, setSoftSkills] = useState([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -38,11 +39,23 @@ function App() {
     setTechDta([...techData]);
     setTechSkills([...techSkillData]);
     setSoftSkills([...softSkillData]);
+
+    window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
   }, []);
 
   return (
     <PortfolioProvider
-      value={{ hero, about, projects, contact, footer, techDta, techskills, softskills }}
+      value={{
+        hero,
+        about,
+        projects,
+        contact,
+        footer,
+        techDta,
+        techskills,
+        softskills,
+        windowWidth,
+      }}
     >
       <Hero />
       <About />

@@ -81,7 +81,7 @@
         text-align: center;
 
         @include respond(big-desktop) {
-          font-size: $big-font-size;
+          font-size: $default-font-size;
         }
 
         @include respond(tab-port) {

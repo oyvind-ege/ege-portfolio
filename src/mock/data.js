@@ -17,7 +17,8 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'front-square-500.png',
+  img1: 'front-square-500.png',
+  img2: 'ege-lake.jpg',
   paragraphs: [
     'Hi! I am Øyvind. I am a former genocide investigator and peace process associate, having worked with both the UN in Cambodia and an NGO in Switzerland.',
     'Though extremely meaningful and intellectually stimulating, my previous career was far removed from the lives of those we served, and so one day I decided to take the plunge and committ to a career change.',
