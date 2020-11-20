@@ -199,11 +199,6 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/OyvindEge',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/oyvind-ege/',
     },

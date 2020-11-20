@@ -11,12 +11,10 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <Title title="Contact" />
+        <Title title="Interested?" />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
-            </p>
+            <p className="contact-wrapper__text">{cta || ''}</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
