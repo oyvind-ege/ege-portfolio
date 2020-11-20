@@ -19,12 +19,21 @@
 
     img {
 
-      @include respond(tab-land) {
-        width: 7%;
-      }
+
 
       @include respond(tab-port) {
         width: 8%;
+      }
+
+      @include respond(tab-land) {
+        @media screen and (min-width: 1170px) {
+          width: 15%;
+        }
+        width: 8%;
+      }
+
+      @include respond(big-desktop) {
+        width: 10%;
       }
 
       @include respond(phone) {
