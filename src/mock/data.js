@@ -48,7 +48,7 @@ export const projectsData = [
     info2:
       'The result of an 8-hour challenge to build an amortization scheduler. This web-app will generate and display an amortization schedule based on a predefined set of loan criteria. Consists of a Svelte frontend and mocked data.',
     date: 2020,
-    url: 'https://www.vg.no',
+    url: 'https://stupefied-mayer-a2426b.netlify.app/',
     repo: 'https://github.com/oyvind-ege/wnda.amortization',
     tech: ['Javascript', 'Svelte'],
   },
@@ -76,6 +76,80 @@ export const projectsData = [
     tech: ['Javascript', 'Svelte'],
   },
 ];
+
+// SKILLS DATA
+export const techSkillData = [
+  {
+    name: 'Javascript',
+    level: 9,
+    displayColor: '#B85700',
+  },
+  {
+    name: 'TypeScript',
+    level: 7,
+    displayColor: '#68B4DC',
+  },
+  {
+    name: 'Express.js',
+    level: 8,
+    displayColor: '#3B4E74',
+  },
+  {
+    name: 'React',
+    level: 8,
+    displayColor: '#007CDD',
+  },
+  {
+    name: 'Svelte',
+    level: 7,
+    displayColor: '#CB4424',
+  },
+  {
+    name: 'SASS/CSS',
+    level: 7,
+    displayColor: '#3B4E74',
+  },
+  {
+    name: 'MongoDB',
+    level: 8,
+    displayColor: '#C3439E',
+  },
+  {
+    name: 'SQL',
+    level: 8,
+    displayColor: '#007CDD',
+  },
+];
+
+export const softSkillData = [
+  {
+    name: 'Teamwork',
+    level: 8,
+    displayColor: '#B85700',
+  },
+  {
+    name: 'Agile development',
+    level: 8,
+    displayColor: '#68B4DC',
+  },
+  {
+    name: 'Critical thinking',
+    level: 9,
+    displayColor: '#3B4E74',
+  },
+  {
+    name: 'Creativity',
+    level: 8,
+    displayColor: '#3B4E74',
+  },
+  {
+    name: 'Strategic thinking',
+    level: 8,
+    displayColor: '#3B4E74',
+  },
+];
+
+// TECH STACK
 
 export const techData = [
   {

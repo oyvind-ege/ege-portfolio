@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import ProjectImg from '../Image/ProjectImg';
-import TechStackBar from '../TechStackBar/TechStackBar';
+import TechStackBar from './TechStackBar/TechStackBar';
 import PropTypeShapeList from '../PropTypes/PropTypes';
 
 const Project = (props) => {

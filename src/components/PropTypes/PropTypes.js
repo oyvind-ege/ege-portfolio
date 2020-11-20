@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const PropTypeShapeList = {
+const PropTypeShapeList = {
   project: {
     img: PropTypes.string,
     title: PropTypes.string,
