@@ -42,6 +42,7 @@
     }
 
     .vertical-timeline {
+      max-width: 1000px;
       @include respond(tab-land){
         width: 70%;
       }

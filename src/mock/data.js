@@ -117,7 +117,7 @@ export const techSkillData = [
   {
     name: 'SQL',
     level: 8,
-    displayColor: '#007CDD',
+    displayColor: '#74776B',
   },
 ];
 
@@ -130,7 +130,7 @@ export const softSkillData = [
   {
     name: 'Agile development',
     level: 8,
-    displayColor: '#68B4DC',
+    displayColor: '#CB4424',
   },
   {
     name: 'Critical thinking',
@@ -145,7 +145,7 @@ export const softSkillData = [
   {
     name: 'Strategic thinking',
     level: 8,
-    displayColor: '#3B4E74',
+    displayColor: '#74776B',
   },
   {
     name: 'Leadership',
