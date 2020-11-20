@@ -147,6 +147,11 @@ export const softSkillData = [
     level: 8,
     displayColor: '#3B4E74',
   },
+  {
+    name: 'Leadership',
+    level: 8,
+    displayColor: '#68B4DC',
+  },
 ];
 
 // TECH STACK
