@@ -28,7 +28,7 @@ function App() {
   const [techDta, setTechDta] = useState([]);
   const [techskills, setTechSkills] = useState([]);
   const [softskills, setSoftSkills] = useState([]);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState();
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -40,7 +40,11 @@ function App() {
     setTechSkills([...techSkillData]);
     setSoftSkills([...softSkillData]);
 
-    window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
+    if (typeof window !== `undefined`) {
+      window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
+    } else {
+      console.log('Skipping window');
+    }
   }, []);
 
   return (
